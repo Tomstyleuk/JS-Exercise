@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>おみくじ　Fortune Slip</title>
+  </head>
+  <body>
+    <h1>Let's See Your Fortune!!</h1>
+    <input id="btn" type="button" value="push here :)" />
+    <script>
+      document.getElementById("btn").onclick = function() {
+        const rnd = Math.floor(Math.random() * 6);
+        let fortune;
+
+        // if (rnd === 0) fortune = "omg! you are very very lucky";
+        // if (rnd === 1) fortune = "very lucky";
+        // if (rnd === 2) fortune = "lucky";
+        // if (rnd === 3) fortune = "good";
+        // if (rnd === 4) fortune = "ok..";
+        // if (rnd === 5) fortune = "no luck...";
+        // alert(fortune);
+
+        switch (rnd) {
+          case 0:
+            alert("omg! you are very very lucky");
+            break;
+          case 1:
+            alert("very lucky");
+            break;
+          case 2:
+            alert("lucky");
+            break;
+          case 3:
+            alert("good");
+            break;
+          case 4:
+            alert("ok..");
+            break;
+          case 5:
+            alert("no luck...");
+            break;
+        }
+      };
+    </script>
+  </body>
+</html>
